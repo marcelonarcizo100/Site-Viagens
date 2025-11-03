@@ -1,0 +1,189 @@
+/* Configurações Globais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Para rolagem suave ao clicar no menu */
+}
+
+/* 1. Cabeçalho e Navegação */
+header {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed; /* Fixa o menu no topo */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007BFF; /* Cor de destaque */
+}
+
+/* 2. Seção Principal (Hero) */
+.hero {
+    height: 100vh; /* Ocupa a altura total da tela */
+    background-image: url('https://via.placeholder.com/1920x1080?text=Sua+Imagem+de+Fundo'); /* TROQUE ESTA IMAGEM */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente */
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Botão CTA (Call to Action) Principal */
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* 3. Seções de Conteúdo (Padrão) */
+.content-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    padding-top: 6rem; /* Ajuste para o header fixo */
+}
+
+.bg-light {
+    background-color: #f4f4f4;
+}
+
+/* 4. Grid de Pacotes */
+.pacotes-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha em telas menores */
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.pacote-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px; /* Largura fixa para cada card */
+    overflow: hidden; /* Garante que a imagem não saia do card */
+}
+
+.pacote-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+}
+
+.pacote-card h3 {
+    margin: 1rem;
+    color: #333;
+}
+
+.pacote-card p {
+    margin: 0 1rem 1rem 1rem;
+    color: #666;
+}
+
+.cta-button-small {
+    background-color: #28a745; /* Cor verde (ex: WhatsApp) */
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button-small:hover {
+    background-color: #218838;
+}
+
+/* 5. Formulário de Contato */
+#contact-form {
+    max-width: 600px;
+    margin: 1rem auto 0 auto;
+    text-align: left;
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+#contact-form button {
+    margin-top: 1.5rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+/* 6. Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
