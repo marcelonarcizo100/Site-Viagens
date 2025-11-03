@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Agência de Viagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">SuaLogo</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#pacotes">Pacotes</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Descubra o Mundo Conosco</h1>
+            <p>As melhores viagens e pacotes personalizados para você.</p>
+            <a href="#contato" class="cta-button">Faça um Orçamento</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="content-section">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma agência apaixonada por realizar sonhos. Com anos de experiência, garantimos a melhor experiência de viagem, cuidando de cada detalhe para que sua única preocupação seja aproveitar o momento.</p>
+    </section>
+
+    <section id="pacotes" class="content-section bg-light">
+        <h2>Pacotes Populares</h2>
+        <div class="pacotes-grid">
+            <div class="pacote-card">
+                <img src="https://via.placeholder.com/300x200?text=Destino+1" alt="Pacote 1">
+                <h3>Paris, França</h3>
+                <p>7 dias na cidade luz, incluindo passeios e hotel.</p>
+                <a href="#contato" class="cta-button-small">Saiba Mais</a>
+            </div>
+            <div class="pacote-card">
+                <img src="https://via.placeholder.com/300x200?text=Destino+2" alt="Pacote 2">
+                <h3>Cancún, México</h3>
+                <p>Sol, praia e resorts all-inclusive no caribe.</p>
+                <a href="#contato" class="cta-button-small">Saiba Mais</a>
+            </div>
+            <div class="pacote-card">
+                <img src="https://via.placeholder.com/300x200?text=Destino+3" alt="Pacote 3">
+                <h3>Rio de Janeiro, Brasil</h3>
+                <p>Conheça a cidade maravilhosa e seus pontos turísticos.</p>
+                <a href="#contato" class="cta-button-small">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="content-section">
+        <h2>Entre em Contato</h2>
+        <p>Quer planejar sua próxima viagem? Preencha o formulário abaixo.</p>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="cta-button">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Sua Agência de Viagens. Todos os direitos reservados.</p>
+        <p>Siga-nos: [Links Redes Sociais]</p>
+    </footer>
+
+</body>
+</html>
